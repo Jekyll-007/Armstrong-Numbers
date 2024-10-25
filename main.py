@@ -1,7 +1,8 @@
 def is_armstrong_number(num):
     digits = str(num)
     power = len(digits)
-    sum_of_power = sum(input("Enter a number: "))
+    sum_of_power = sum(int(digit) ** power for digit in digits)
+    return sum_of_power == num
 
 user_input = int(input("Enter a number: "))
 
